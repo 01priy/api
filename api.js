@@ -33,7 +33,7 @@ const upload = multer({ storage: storage }).single("pimage");
                 pname:req.body.pname,
                 pdesc:req.body.pdesc,
                 pprice:req.body.pprice,
-                pimage:"http://localhost:4000//"+req.file.filename
+                pimage:"https://api-5dnv.onrender.com//uploads/"+req.file.filename
             })
              newImage.save()
              resp.send("File Uploaded")
